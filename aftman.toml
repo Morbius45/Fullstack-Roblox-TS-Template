@@ -1,0 +1,9 @@
+# aftman.toml - Tool manager configuration
+# Install with: aftman install
+
+[tools]
+rojo = "rojo-rbx/rojo@7.4.4"
+tarmac = "Roblox/tarmac@0.7.0"
+mantle = "blake-mealey/mantle@0.11.18"
+selene = "Kampfkarren/selene@0.27.1"
+stylua = "JohnnyMorganz/StyLua@0.20.0"

@@ -1,0 +1,46 @@
+# Mantle Configuration
+# https://mantledeploy.vercel.app/
+
+environments:
+  - label: dev
+    branches:
+      - main
+    targetAccess: private
+    
+  - label: staging  
+    branches:
+      - staging
+    targetAccess: friends
+    
+  - label: production
+    branches:
+      - release/*
+    targetAccess: public
+
+target:
+  experience:
+    # Replace with your experience asset ID or leave commented to create new
+    # assetId: ${{ secrets.EXPERIENCE_ID }}
+    
+    configuration:
+      genre: all
+      playableDevices:
+        - computer
+        - phone
+        - tablet
+        - console
+      playability: private
+      privateServers:
+        disabled
+      enableStudioAccessToApis: true
+      allowThirdPartySales: false
+      allowThirdPartyTeleports: false
+      avatarType: r6
+      
+    places:
+      start:
+        # Replace with your place asset ID or leave commented to create new
+        # assetId: ${{ secrets.EXPERIENCE_ID }}
+        file: game.rbxlx
+
+state: local

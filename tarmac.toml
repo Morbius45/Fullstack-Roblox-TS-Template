@@ -1,0 +1,32 @@
+# Tarmac Configuration
+# https://github.com/Roblox/tarmac
+
+name = "game-assets"
+max-spritesheet-size = 1024
+
+# Target configuration for production (Roblox cloud)
+[[target.roblox]]
+codegen-path = "src/shared/assets/index.ts"
+asset-cache-path = "asset-cache.toml"
+
+# Target configuration for development (local file system)
+[[target.development]]
+codegen-path = "src/shared/assets/index.ts"
+
+# Include all images from the assets folder
+[[inputs]]
+glob = "assets/images/**/*.png"
+codegen-base-path = "src/shared/assets"
+
+[[inputs]]
+glob = "assets/images/**/*.jpg"
+codegen-base-path = "src/shared/assets"
+
+# Include all sounds
+[[inputs]]
+glob = "assets/sounds/**/*.mp3"
+codegen-base-path = "src/shared/assets"
+
+[[inputs]]
+glob = "assets/sounds/**/*.ogg"
+codegen-base-path = "src/shared/assets"

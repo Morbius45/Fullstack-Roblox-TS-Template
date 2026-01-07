@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+out/
+
+# Roblox files
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+
+# IDE
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Tarmac
+asset-cache.toml
+
+# Mantle
+.mantle/
+.mantle-state.yml
+
+# Logs
+*.log
+npm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
