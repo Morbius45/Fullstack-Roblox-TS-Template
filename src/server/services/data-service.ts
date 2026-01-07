@@ -26,6 +26,14 @@ export class DataService {
 			task.spawn(() => this.onPlayerAdded(player));
 		}
 
+		// Handle client requestData remote
+		remotes.player.requestData.connect((player) => {
+			const data = this.getData(player);
+			if (data) {
+				remotes.player.syncData.fire(player, data);
+			}
+		});
+
 		print("[DataService] Started");
 	}
 

@@ -22,7 +22,7 @@ export class UIController {
 		screenGui.IgnoreGuiInset = true;
 		screenGui.Parent = playerGui;
 
-		this.root = createRoot(new Instance("Folder"));
+		this.root = createRoot(screenGui);
 		this.root.render(
 			<ReflexProvider producer={store}>
 				<App />

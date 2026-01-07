@@ -2,7 +2,6 @@
 
 A comprehensive Roblox-TS game template featuring:
 
-- **[Flamework](https://flamework.fireboltofdeath.dev/)** - Dependency injection, services, controllers, and components
 - **[Lapis](https://github.com/nezuo/lapis)** - DataStore wrapper with automatic retries and session locking
 - **[Remo](https://github.com/littensy/remo)** - Type-safe networking library
 - **[Reflex](https://github.com/littensy/reflex)** - Rodux-inspired state management
@@ -41,7 +40,7 @@ npm install
 - [Rojo](https://rojo.space/) (v7+)
 - [Mantle](https://mantledeploy.vercel.app/docs/installation)
 - [Tarmac](https://github.com/Roblox/tarmac)
-- [Aftman](https://github.com/LPGhatguy/aftman) (recommended for tool management)
+- [Rokit](https://github.com/rojo-rbx/rokit) (recommended for tool management)
 
 ## Getting Started
 
@@ -70,14 +69,14 @@ npm install
 .
 ├── src/
 │   ├── client/            # Client-side code
-│   │   ├── controllers/   # Flamework controllers
-│   │   ├── components/    # Flamework components (client)
+│   │   ├── controllers/   # Client controllers
+│   │   ├── components/    # Client components
 │   │   ├── ui/            # React UI components
 │   │   └── runtime.client.ts
 │   │
 │   ├── server/            # Server-side code
-│   │   ├── services/      # Flamework services
-│   │   ├── components/    # Flamework components (server)
+│   │   ├── services/      # Server services
+│   │   ├── components/    # Server components
 │   │   └── runtime.server.ts
 │   │
 │   └── shared/            # Shared code
@@ -110,11 +109,6 @@ npm install
 | `npm run tarmac:sync-dev` | Sync assets locally |
 
 ## Architecture
-
-### Flamework
-- **Services** run on the server and handle game logic
-- **Controllers** run on the client and handle player-specific logic
-- **Components** attach to instances and provide behavior
 
 ### Data Flow
 ```
