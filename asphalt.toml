@@ -1,10 +1,9 @@
-# Tarmac Configuration
-# https://github.com/Roblox/tarmac
+# Asphalt Configuration
+# https://github.com/rojo-rbx/asphalt
 
 name = "game-assets"
-max-spritesheet-size = 1024
 
-# Target configuration for production (Roblox cloud)
+# Target configuration for syncing to Roblox
 [[target.roblox]]
 codegen-path = "src/shared/assets/index.ts"
 asset-cache-path = "asset-cache.toml"

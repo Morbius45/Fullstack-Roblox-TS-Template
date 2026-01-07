@@ -1,7 +1,7 @@
 {
   "name": "roblox-ts-template",
   "version": "1.0.0",
-  "description": "Roblox-TS template with Flamework, Lapis, Remo, Reflex, React, Mantle, and Tarmac",
+  "description": "Roblox-TS template with Flamework, Lapis, Remo, Reflex, React, Mantle, and Asphalt",
   "main": "out/init.lua",
   "scripts": {
     "build": "rbxtsc",
@@ -10,8 +10,8 @@
     "dev": "concurrently \"npm run watch\" \"npm run serve\"",
     "mantle:deploy": "mantle deploy",
     "mantle:outputs": "mantle outputs",
-    "tarmac:sync": "tarmac sync --target roblox",
-    "tarmac:sync-dev": "tarmac sync --target development"
+    "asphalt:sync": "asphalt sync --target roblox",
+    "asphalt:sync-dev": "asphalt sync --target development"
   },
   "keywords": [
     "roblox",

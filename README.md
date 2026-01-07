@@ -7,7 +7,7 @@ A comprehensive Roblox-TS game template featuring:
 - **[Reflex](https://github.com/littensy/reflex)** - Rodux-inspired state management
 - **[React](https://github.com/littensy/rbxts-react)** - React 18 for Roblox UI
 - **[Mantle](https://mantledeploy.vercel.app/)** - Infrastructure as code for deployment
-- **[Tarmac](https://github.com/Roblox/tarmac)** - Asset management and syncing
+- **[Asphalt](https://github.com/jacktabscode/asphalt)** - Asset management and syncing
 
 ## 🚀 Use This Template
 
@@ -18,7 +18,7 @@ Click the green **"Use this template"** button at the top of this repository, th
 ```bash
 gh repo create my-new-game --template Morbius45/Fullstack-Roblox-TS-Template --clone
 cd my-new-game
-npm install
+npm instal
 ```
 
 ### Option 3: Degit (No Git History)
@@ -39,7 +39,7 @@ npm install
 - [Node.js](https://nodejs.org/) (v18+)
 - [Rojo](https://rojo.space/) (v7+)
 - [Mantle](https://mantledeploy.vercel.app/docs/installation)
-- [Tarmac](https://github.com/Roblox/tarmac)
+- [Asphalt](https://github.com/jacktabscode/asphalt)
 - [Rokit](https://github.com/rojo-rbx/rokit) (recommended for tool management)
 
 ## Getting Started
@@ -63,6 +63,18 @@ npm install
    - Install the Rojo plugin in Roblox Studio
    - Click "Connect" in the Rojo plugin panel
 
+5. **Deploy with Mantle:**
+    - Make sure you have [Mantle](https://mantledeploy.vercel.app/docs/installation) installed and configured
+    - Deploy your place to Roblox:
+       ```bash
+       npm run mantle:deploy
+       ```
+    - After deployment, Mantle will print a link to your Roblox experience in the terminal
+    - **To join your experience in Roblox Studio:**
+       1. Copy the experience link or place ID from the Mantle outputits co
+       2. In Roblox Studio, go to `File > Open Place > Open from Roblox...`
+       3. Paste the place ID or use the link to open your deployed experience
+
 ## Project Structure
 
 ```
@@ -85,12 +97,12 @@ npm install
 │       ├── data/          # Lapis data schemas
 │       └── types/         # Shared types
 │
-├── assets/                # Game assets (Tarmac)
+├── assets/                # Game assets (Asphalt)
 │   ├── images/
 │   └── sounds/
 │
 ├── mantle.yml             # Mantle deployment config
-├── tarmac.toml            # Tarmac asset config
+├── asphalt.toml           # Asphalt asset config
 ├── default.project.json   # Rojo project config
 └── tsconfig.json          # TypeScript config
 
@@ -105,8 +117,8 @@ npm install
 | `npm run serve` | Start Rojo server |
 | `npm run dev` | Watch + serve concurrently |
 | `npm run mantle:deploy` | Deploy with Mantle |
-| `npm run tarmac:sync` | Sync assets to Roblox |
-| `npm run tarmac:sync-dev` | Sync assets locally |
+| `npm run asphalt:sync` | Sync assets to Roblox |
+| `npm run asphalt:sync-dev` | Sync assets locally |
 
 ## Architecture
 
