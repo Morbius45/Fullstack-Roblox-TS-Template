@@ -30,7 +30,9 @@
   },
   "dependencies": {
     "@rbxts/lapis": "^0.3.6",
+    "@rbxts/matter": "^0.8.5",
     "@rbxts/object-utils": "^1.0.4",
+    "@rbxts/plasma": "^0.4.5",
     "@rbxts/pretty-react-hooks": "^0.6.4",
     "@rbxts/react": "^17.3.7-ts.1",
     "@rbxts/react-reflex": "^0.3.7",

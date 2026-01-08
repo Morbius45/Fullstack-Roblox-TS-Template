@@ -20,7 +20,9 @@
     "outDir": "out",
     "baseUrl": "src",
     "paths": {
-      "shared/*": ["shared/*"]
+      "shared/*": ["shared/*"],
+      "client/*": ["client/*"],
+      "server/*": ["server/*"]
     },
     "incremental": true,
     "tsBuildInfoFile": "out/tsconfig.tsbuildinfo",
